@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="" name="author">
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<title>game time</title>
+	</head>
+	<body>
+		<header>
+			<p>Oh no! It seems you're in a bad situation and now you have to play <a href="https://en.wikipedia.org/wiki/Hangman_(game)" target="_blank"><i>Hangman</i></a> with me! To play, click <span>Play</span> and enter a letter - Any letter! Just remember to do it with caution or otherwise... Yeah, you know <a href="https://en.wikipedia.org/wiki/Hangman_(game)" target="_blank"><i>Hangman</i></a>.</p>
+		</header>
+		<main>			
+			<button><span onclick="Hangman()">play</span></button>
+			
+			<pre id="hangman"><span class="hangmanpart">_____<br></span><span class="hangmanpart"><span class="wingdings">x</span></span><span class="hangmanpart">     |</span><br><span class="hangmanpart">|      </span><span class="hangmanpart"><span class="wingdings">K</span></span><br><span class="hangmanpart">|    </span><span class="hangmanpart"><span class="wingdings">I</span>|<span class="wingdings">I</span></span><br><span class="hangmanpart">|      </span><span class="hangmanpart">/\</span><span class="hangmanpart"><br>_____</span></pre>
+				
+			<p><span id="letterD">_</span><span id="letterA">_</span><span id="letterR">_</span><span id="letterK" >_</span> <span id="letterB">_</span><span id="letterL">_</span><span id="letterU">_</span><span id="letterE">_</span></p>
+			
+			<h2 class="hangmanpart">You lost! <a href="">Click me to Try Again!</a></h2>
+		</main>	
+
+		<script src="main.js">
+		</script>
+
+	</body>
+</html>

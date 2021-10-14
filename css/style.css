@@ -1,0 +1,118 @@
+/*BASIC CSS RESET*/
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/*FONT*/
+
+@font-face {
+  font-family: Phosphene;
+  src: url(fonts/PhospheneFont-Regular.ttf);
+}
+
+/*CSS*/
+
+body{
+	display: block;
+	position: relative;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: black;
+}
+
+header p{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 12px;
+	line-height: 1.5;
+	position: absolute;
+	top: 6em;
+	left: 6em;
+	width: 25em;
+	color: white;
+}
+
+header p span{
+	animation: rainbow 5s infinite; 
+}
+
+a{
+	color: white;
+}
+
+main{
+	position: absolute;
+	top: 6em;
+	right: 25em;
+	text-align: center;
+}
+
+button{
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	cursor: pointer;
+	animation: rainbow 5s infinite; 
+	background-color: white;
+}
+
+@keyframes rainbow{
+	0%{color: lime;}
+	10%{color: plum;}	
+	20%{color: beige;}
+	30%{color: mistyrose;}
+	40%{color: yellow;}
+	50%{color: peachpuff;}
+	60%{color: gold;}
+	70%{color: cyan;}
+	80%{color: pink;}
+	90%{color: aliceblue;}
+	100%{color: deepskyblue;}
+}
+
+#hangman{
+	font-family: 'Helvetica', sans-serif;
+	font-size: 36px;
+	text-align: left;
+	width: 3.2em;
+	margin: 2em auto;
+}
+
+.hangmanpart{
+	visibility: hidden;
+	cursor: default;
+	color: white;
+}
+
+#hangman .wingdings{
+	font-family: 'Wingdings', sans-serif;
+}
+
+main p{
+	font-family: 'Phosphene', sans-serif;
+	font-size: 52px;
+	line-height: 1.4;
+	letter-spacing: 10px;
+	animation: rainbow 5s infinite; 
+	cursor:default;
+}
+
+h2{
+	font-family: 'Helvetica', sans-serif;
+	margin-top: 3em;
+}
+
+h2 a{
+	animation: rainbow 5s infinite; 
+}
